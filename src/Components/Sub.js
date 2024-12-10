@@ -2,7 +2,7 @@ import React from "react";
 
 const Sub = () => {
   return (
-    <div className="bg-amber-200 mt-7 py-10">
+    <div className="bg-orange-100 mt-7 py-10">
       <div className="container mx-auto px-10 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
         {/* Left Section */}
         <div className="text-center md:text-left">

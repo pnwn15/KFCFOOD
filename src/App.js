@@ -1,30 +1,31 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import Slick from './Components/Slick';
-import Bar from './Components/Bar';
-import Imgproduct from './Components/Imgproduct';
-import Product from './Components/Product';
-import Hero from './Components/็Hero';
-import Team from './Components/Team';
-import Row from './Components/Row';
-import Sub from './Components/Sub';
 import Footer from './Components/Footer';
+import Home from './Web/Home'; // หน้าแรก
+import Shop from './Web/Shop'; // หน้าร้านค้า
+import Wishlist from './Web/Wishlist';
+import { CartProvider } from './Web/CartContext';
+import Cart from './Components/Cart';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Slick />
-      <Bar />
-      <Imgproduct />
-      <Product />
-      <Hero />
-      <Team />
-      <Row />
-      <Sub />
-      <Footer />
-    </>
+    <CartProvider>
+    <Router>
+      <>
+        <Navbar /> {/* แสดง Navbar ในทุกหน้า */}
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* เส้นทางของหน้าแรก */}
+          <Route path="/shop" element={<Shop />} /> {/* เส้นทางของหน้า Shop */}
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+        
+        <Footer /> {/* แสดง Footer ในทุกหน้า */}
+      </>
+    </Router>
+    </CartProvider>
   );
 }
 
