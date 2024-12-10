@@ -42,25 +42,25 @@ function Shop() {
   return (
     <div className="bg-white">
       <Slick />
-      <div className="flex flex-col items-center mt-5">
+      <div className="flex flex-col items-center mt-5 px-4 sm:px-8 lg:px-16">
         {/* แสดงแถบหมวดหมู่ */}
-        <div className="flex space-x-4 border-b-2 border-gray-200 pb-2">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`px-6 py-3 text-md font-medium ${
-                activeCategory === category
-                  ? "text-red-600 border-b-4 border-red-600"
-                  : "text-gray-600 hover:text-red-600"
-              } transition-all duration-200 ease-in-out`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+        <div className="flex space-x-4 sm:space-x-6 md:space-x-8 border-b-2 overflow-x-auto border-gray-200 pb-2 w-full justify-center flex-wrap">
+  {categories.map((category) => (
+    <button
+      key={category}
+      onClick={() => setActiveCategory(category)}
+      className={`px-6 py-3 text-sm sm:text-md font-medium ${
+        activeCategory === category
+          ? "text-red-600 border-b-4 border-red-600"
+          : "text-gray-600 hover:text-red-600"
+      } transition-all duration-200 ease-in-out`}
+    >
+      {category}
+    </button>
+  ))}
+</div>
 
-        <div className="mt-8">
+        <div className="mt-8 w-full">
           <div className="justify-center flex">
             <p className="text-gray-700 text-lg font-semibold">
               Showing menu for: <span className="font-bold">{activeCategory}</span>
@@ -68,7 +68,7 @@ function Shop() {
           </div>
 
           {/* แสดงรายการสินค้า */}
-          <div className="grid grid-cols-2 md:grid-cols-4 mx-16 gap-6 mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
             {filteredProducts.map((product) => (
               <div
                 key={product.name}
