@@ -10,6 +10,8 @@ import { CartProvider } from './Web/CartContext';
 import Cart from './Components/Cart';
 import Checkout from './Web/Checkout';
 import About from './Web/About';
+import Blog from './Web/Blog';
+import Contact from './Web/Contact';
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+
         </Routes>
         
         <Footer /> {/* แสดง Footer ในทุกหน้า */}

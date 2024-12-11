@@ -3,6 +3,8 @@ import Slick from '../Components/Slick';
 import Team from '../Components/Team';
 import Sub from '../Components/Sub';
 import Bar from '../Components/Bar';
+import Imgproduct from '../Components/Imgproduct';
+import Hero from '../Components/็Hero';
 
 function About() {
     return (
@@ -16,10 +18,12 @@ function About() {
                 <section className="bg-white  mb-12">
                     <div className="flex flex-col sm:flex-row items-center">
                         <div className="sm:w-1/2 sm:mr-8">
-                            <img
-                                src="https://via.placeholder.com/400x400"
+                            <video
+                                src="image/VDOKFC.mp4" // URL ของวิดีโอที่ต้องการแสดง
                                 alt="About Us"
                                 className="rounded-lg shadow-md"
+                                controls // เพิ่มปุ่มควบคุมการเล่น เช่น play, pause
+                                width="100%" // กำหนดขนาดให้วิดีโอพอดีกับพื้นที่
                             />
                         </div>
                         <div className="sm:w-1/2 text-center sm:text-left mt-6 sm:mt-0">
@@ -46,22 +50,9 @@ function About() {
 
                     </div>
                 </section>
-
-
-                {/* Contact Us Section */}
-                <section className="bg-white py-12 px-6 rounded-lg shadow-lg">
-                    <h2 className="text-3xl font-semibold text-gray-800 text-center mb-4">Get in Touch</h2>
-                    <p className="text-lg text-center text-gray-600 mb-6">
-                        We would love to hear from you! If you have any questions or feedback, feel free to contact us.
-                    </p>
-                    <div className="flex justify-center">
-                        <button className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
-                            Contact Us
-                        </button>
-                    </div>
-                </section>
             </div>
             <Sub />
+            <Hero />
             <Team />
             <Bar />
         </div>
