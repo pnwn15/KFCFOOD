@@ -3,7 +3,7 @@ import Slick from "../Components/Slick";
 
 function ContactUs() {
     return (
-        <div className="bg-gray-100 py-12 px-4 xl:px-0">
+        <div className="bg-gray-100  px-4 xl:px-0">
             <Slick />
             <div className="container mt-10 ">
                 {/* Top Info Section */}

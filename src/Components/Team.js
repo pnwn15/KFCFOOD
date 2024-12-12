@@ -11,7 +11,7 @@ function Team() {
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 max-md:justify-center mt-12">
                     <div class="border rounded-lg overflow-hidden">
-                        <img src="https://readymadeui.com/team-1.webp" class="w-full h-56 object-cover" />
+                        <img src="image/nem.jpg" class="w-full h-56 object-cover" />
 
                         <div class="p-4">
                             <h4 class="text-gray-800 text-base font-bold">Panawat Srimuang</h4>
@@ -47,7 +47,7 @@ function Team() {
                     </div>
 
                     <div class="border rounded-lg overflow-hidden">
-                        <img src="https://readymadeui.com/team-2.webp" class="w-full h-56 object-cover" />
+                        <img src="image/nem2.jpg" class="w-full h-56 object-cover" />
 
                         <div class="p-4">
                             <h4 class="text-gray-800 text-base font-bold">Shiro</h4>
@@ -83,7 +83,7 @@ function Team() {
                     </div>
 
                     <div class="border rounded-lg overflow-hidden">
-                        <img src="https://readymadeui.com/team-3.webp" class="w-full h-56 object-cover" />
+                        <img src="image/nem1.jpg" class="w-full h-56 object-cover" />
 
                         <div class="p-4">
                             <h4 class="text-gray-800 text-base font-bold">Warisara suthioran</h4>
@@ -119,7 +119,7 @@ function Team() {
                     </div>
 
                     <div class="border rounded-lg overflow-hidden">
-                        <img src="https://readymadeui.com/team-4.webp" class="w-full h-56 object-cover" />
+                        <img src="/image/satoru.png" class="w-full h-56 object-cover" />
 
                         <div class="p-4">
                             <h4 class="text-gray-800 text-base font-bold">Thada pipatpongsit</h4>

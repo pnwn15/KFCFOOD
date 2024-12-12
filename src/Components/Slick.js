@@ -19,6 +19,7 @@ const Slick = () => {
   return (
     <div className="container mx-auto py-2">
   <Slider {...settings}>
+    
     <div>
       <img
         src="image/kfc1.jpg"

@@ -1,6 +1,6 @@
 import React from "react";
 
-const categories = ["Promotions", "New Menus", "Store Updates", "Events", "Partnerships"];
+const categories = ["Promotions", "Newkfc", "Comingsoon", "Events"];
 const blogData = [
     {
         id: 1,

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import satoruImage from '../assets/satoru.png';
 
 // Countdown Timer Component
 function CountdownTimer({ targetDate }) {
@@ -31,10 +32,10 @@ function CountdownTimer({ targetDate }) {
     <div className="text-3xl font-bold text-gray-900">
       {timeLeft.days !== undefined ? (
         <div className='flex gap-10'>
-          <span className="text-4xl text-green-400">{timeLeft.days} <br /> <p className='text-sm text-black font-normal'>Days</p> </span> 
-          <span className="text-4xl  text-green-400">{timeLeft.hours} <br /> <p className='text-sm text-black font-normal'>Hours</p></span> 
-          <span className="text-4xl  text-green-400">{timeLeft.minutes} <br /> <p className='text-sm text-black font-normal'>Minutes</p></span> 
-          <span className="text-4xl  text-green-400">{timeLeft.seconds} <br /> <p className='text-sm text-black font-normal'>Seconds</p></span> 
+          <span className="text-4xl text-green-400">{timeLeft.days} <br /> <p className='text-sm text-black font-normal'>Days</p> </span>
+          <span className="text-4xl  text-green-400">{timeLeft.hours} <br /> <p className='text-sm text-black font-normal'>Hours</p></span>
+          <span className="text-4xl  text-green-400">{timeLeft.minutes} <br /> <p className='text-sm text-black font-normal'>Minutes</p></span>
+          <span className="text-4xl  text-green-400">{timeLeft.seconds} <br /> <p className='text-sm text-black font-normal'>Seconds</p></span>
         </div>
       ) : (
         <p className="text-xl text-red-500">Time's up!</p>
@@ -49,14 +50,16 @@ function Hero() {
   return (
     <div className="bg-gray-100 py-16">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between">
           {/* Left side: Image as background */}
           <div
-            className="w-full sm:w-1/2 bg-cover bg-center h-full rounded-lg shadow-lg"
-            style={{ backgroundImage: 'url(/image/hero.jpg)' }} // ใช้เส้นทางที่ถูกต้อง
-          >
-          
-          </div>
+            className="w-full sm:w-1/2  h-96 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url(${satoruImage})`,
+              backgroundSize: 'contain', // ใช้ 'contain' เพื่อให้รูปภาพแสดงเต็มในขอบเขตโดยไม่ถูกตัด
+            }}
+          ></div>
+
           {/* Right side: Text and Countdown */}
           <div className="w-full sm:w-1/2 sm:pl-12">
             <h1 className="text-lg font-extrabold text-gray-900 sm:text-lg">
